@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forums — CookieSMP</title>
+<meta name="description" content="Announcements, updates and events from the CookieSMP owners.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="index.html">
+      <img class="mark" src="assets/favicon.svg" alt="CookieSMP server icon">
+      <span>CookieSMP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#connect">Connect</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="forums.html" class="active">Forums</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <p class="section-tag">forums</p>
+    <h1>Announcements &amp; updates</h1>
+    <p>Everything posted here comes straight from the CookieSMP owners &mdash; patch notes, events, and heads-up on downtime.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="forum-toolbar">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-cat="all">All posts</button>
+        <button class="filter-tab" data-cat="announcement">Announcements</button>
+        <button class="filter-tab" data-cat="update">Updates</button>
+        <button class="filter-tab" data-cat="event">Events</button>
+        <button class="filter-tab" data-cat="downtime">Downtime</button>
+      </div>
+    </div>
+
+    <div class="post-list" id="post-list">
+      <div class="empty-state">Loading posts&hellip;</div>
+    </div>
+
+    <div class="owner-note">
+      <strong>Owners:</strong> this board reads straight from <code>posts.json</code> in the repo. To publish something, add a new object to that file and push &mdash; no backend, no login, no build step. See <code>README.md</code> for the exact format.
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> CookieSMP. Not affiliated with Mojang or Microsoft.</p>
+    <ul class="footer-links">
+      <li><a href="index.html#connect">Connect</a></li>
+      <li><a href="forums.html">Forums</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
