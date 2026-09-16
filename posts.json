@@ -5,7 +5,7 @@
     "category": "announcement",
     "author": "shoesarthebst/shoesarthbst (Co Owner)",
     "date": "2026-09-09",
-    "pinned": false
+    "pinned": true
   }
    {
     "title": "'PacketEvents failed to inject into a channel' fixed!",
@@ -13,6 +13,6 @@
     "category": "announcement",
     "author": "shoesarthebst/shoesarthbst (Co Owner)",
     "date": "2026-09-13",
-    "pinned": true
+    "pinned": false
   }
 ]
